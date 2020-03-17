@@ -13,4 +13,5 @@
   * 小遊戲（？
   * 計時器
   * Data visualization
-  
+  * Web POS
+  * Education management tool

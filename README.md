@@ -7,8 +7,10 @@
   * [X] 即時空氣資訊
     * Source: [AirPollution2](https://github.com/hsuan1117/AirPollution2/)
     * WebSite: [即時空氣資訊](https://air.hsuan.app/)
+  * [X] 記事本
+    * Source: [HNoteBook](https://github.com/hsuan1117/HNoteBook/)
+    * WebSite: [HNoteBook (X)](https://note.hsuan.app/)
   * 購物車
-  * 記事本
   * 記帳本
   * 小遊戲（？
   * 計時器

@@ -9,7 +9,7 @@
     * WebSite: [即時空氣資訊](https://air.hsuan.app/)
   * [X] 記事本
     * Source: [HNoteBook](https://github.com/hsuan1117/HNoteBook/)
-    * WebSite: [HNoteBook (X)](https://note.hsuan.app/)
+    * WebSite: [HNoteBook](https://note.hsuan.app/)
   * 購物車
   * 記帳本
   * 小遊戲（？

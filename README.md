@@ -10,10 +10,12 @@
   * [X] 記事本
     * Source: [HNoteBook](https://github.com/hsuan1117/HNoteBook/)
     * WebSite: [HNoteBook](https://note.hsuan.app/)
+  * [X] 計時器
+    * Source: [HsuanTimer](https://github.com/hsuan1117/HsuanTimer/)
+    * WebSite: [HsuanTimer](https://timer.hsuan.app/)
   * 購物車
   * 記帳本
   * 小遊戲（？
-  * 計時器
   * Data visualization
   * Web POS
   * Education management tool

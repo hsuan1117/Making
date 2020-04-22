@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/echarts@4.1.0/dist/echarts.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue-echarts@4.0.2"></script>
+	</head>
+	<body>
+		<div id="app">
+			<template>
+				<v-chart :options="ChartData" />
+			</template>
+			<div class="card">
+				<p><b>列表1</b></p>
+				<div>
+					<template v-for="(category,i) in ChartData.xAxis.data">
+						<input type="text" class="categoryInput" v-model="ChartData.xAxis.data[i]"> &nbsp;
+						<br>
+					</template>
+				</div>
+				<button @click="addCate()">新增</button>
+			</div>
+
+
+			<br>
+			<template v-for="(a,i) in ChartData.series">
+				<template v-for="(b,j) in ChartData.series[i].data">
+					<template v-for="(c,m) in ChartData.xAxis.data">
+						<input type="text" :id="`Input_${i}_${j}_${m}`" v-model="ChartData.series[i].data[j]" :placeholder="`${a} ${b} ${c}`">
+					</template>
+				</template>
+			</template>
+		</div>
+		<style>
+			.card {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+				transition: 0.3s;
+				border-radius: 5px;
+				padding: 5px 16px;
+				line-height: 9px;
+			}
+
+			.card>div>input {
+				margin: 3px;
+				width: 100%;
+				height: 20px;
+			}
+
+			.card:hover {
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			.categoryInput {
+				border-radius: 5px;
+				border-style: inset;
+			}
+		</style>
+		<script>
+			Vue.component('v-chart', VueECharts)
+			let app = new Vue({
+				el: "#app",
+				data() {
+					return {
+						ChartData: {
+							title: {
+								text: "段考成績"
+							},
+							tooltip: {
+								trigger: 'axis'
+							},
+							xAxis: {
+								type: 'category',
+								data: ['數學', '英文', '國文', '社會', '自然']
+							},
+							legend: {
+								data: ['第二次段考', '第一次段考']
+							},
+							grid: {
+								containLabel: true
+							},
+							yAxis: {
+								type: 'value'
+							},
+							toolbox: {
+								feature: {
+									saveAsImage: {}
+								}
+							},
+							series: [{
+								name: "第二次段考",
+								data: [0, 0, 2, 3, 5],
+								type: 'line',
+								stack: '总量',
+							}, {
+								name: "第一次段考",
+								data: [3, 0, 1, 2, 3],
+								type: 'line',
+								stack: '总量',
+							}]
+						}
+					}
+				},
+				filters: {
+
+				},
+				methods: {
+					addCate() {
+						this.ChartData.xAxis.data.push("未命名的分類")
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

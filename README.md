@@ -19,3 +19,4 @@
   * Data visualization
   * Web POS
   * Education management tool
+  * 端對端加密訊息傳送

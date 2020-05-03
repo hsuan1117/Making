@@ -13,9 +13,9 @@
   * [X] 計時器
     * Source: [HsuanTimer](https://github.com/hsuan1117/HsuanTimer/)
     * WebSite: [HsuanTimer](https://timer.hsuan.app/)
-  * 端對端加密訊息傳送
-    * Source: [HsuanEncryptMessage](https://hsuan1117.github.io/HsuanEncryptMessage/)
-    * WebSite: [Hsuan私密訊息](https://em.hsuan.app/)
+  * [x] 端對端加密訊息傳送
+    * Source: [HsuanEncryptMessage](https://github.com/hsuan1117/HsuanEncryptMessage/)
+    * WebSite: [Hsuan私密訊息](https://hsuan1117.github.io/HsuanEncryptMessage/)
   * 購物車
   * 記帳本
   * 小遊戲（？
